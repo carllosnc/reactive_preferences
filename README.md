@@ -1,5 +1,7 @@
 # Reactive Preferences
 
+![Static Badge](https://img.shields.io/badge/Flutter-blue)
+
 >TLDR: Use shared_preferences as a reactive state management.
 
 ## Install
@@ -15,7 +17,7 @@ dependencies:
 
 To more information about unplublished packages, see: https://dart.dev/tools/pub/package-layout#unpublished-packages
 
-## 1️⃣ - Create a class for your value
+## 01 • Create a class for your value
 
 ```dart
 import 'package:reactive_preferences/reactive_preferences.dart';
@@ -51,7 +53,7 @@ class Counter {
 > [!TIP]
 > Create a class for any value specifing the key, default value and transform function.
 
-## 2️⃣ - Initialize RP object and all values on app start
+## 02 • Initialize RP object and all values on app start
 
 ```dart
 void main() async {
@@ -67,7 +69,7 @@ void main() async {
 }
 ```
 
-## 3️⃣ - Use the class in your widget with `RPMixin`
+## 03 • Use the class in your widget with `RPMixin`
 
 ```dart
 class IncrementButton extends StatefulWidget {
