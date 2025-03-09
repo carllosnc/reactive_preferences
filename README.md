@@ -109,7 +109,6 @@ This mixin simplifies the implementation of widgets that need to react to change
 **Properties:**
 
 ### `RP.prefs`
-
 A SharedPreferences instance that provides direct access to the device's persistent storage.
 
 - **type**: SharedPreferences
@@ -118,7 +117,6 @@ A SharedPreferences instance that provides direct access to the device's persist
 To more information about SharedPreferences, see: https://api.flutter.dev/flutter/shared_preferences/SharedPreferences-class.html
 
 ### `RP.init()`
-
 Initializes the shared preferences instance. This methos should be called before on app start.
 
 ```dart
@@ -131,7 +129,6 @@ void main() async {
 ```
 
 ### `RP.initValue()`
-
 Initializes a preference value if it doesn't already exist.
 
 **Signature:** `void initValue({required dynamic Function() current, required dynamic Function() init})`
@@ -149,11 +146,16 @@ Initializes a preference value if it doesn't already exist.
 ```
 
 ### `RP.action()`
-
-**Signature:**
-`void action(Action callback)`
-
 Executes a preference modification and notifies listeners of the change.
+
+**Signature:** `void action(Action callback)`
+
+**Example:**
+```dart
+RP.action((prefs) {
+  prefs.setString('username', 'NewUser');
+});
+```
 
 ---
 
