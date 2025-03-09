@@ -15,7 +15,7 @@ dependencies:
 
 To more information about unplublished packages, see: https://dart.dev/tools/pub/package-layout#unpublished-packages
 
-## STEP:1 - Create a class for your value
+## 1️⃣ - Create a class for your value
 
 ```dart
 import 'package:reactive_preferences/reactive_preferences.dart';
@@ -51,7 +51,7 @@ class Counter {
 > [!TIP]
 > Create a class for any value specifing the key, default value and transform function.
 
-## STEP: 2 - Initialize RP object and all values on app start
+## 2️⃣ - Initialize RP object and all values on app start
 
 ```dart
 void main() async {
@@ -67,7 +67,7 @@ void main() async {
 }
 ```
 
-## STEP: 3 - Use the class in your widget with `RPMixin`
+## 3️⃣ - Use the class in your widget with `RPMixin`
 
 ```dart
 class IncrementButton extends StatefulWidget {
@@ -112,8 +112,8 @@ This mixin simplifies the implementation of widgets that need to react to change
 
 A SharedPreferences instance that provides direct access to the device's persistent storage.
 
-- type: SharedPreferences
-- usage: `RP.prefs.getString('key') or RP.prefs.setString('key', 'value')`
+- **type**: SharedPreferences
+- **usage**: `RP.prefs.getString('key') or RP.prefs.setString('key', 'value')`
 
 To more information about SharedPreferences, see: https://api.flutter.dev/flutter/shared_preferences/SharedPreferences-class.html
 
@@ -134,8 +134,7 @@ void main() async {
 
 Initializes a preference value if it doesn't already exist.
 
-**Signature:**
-- `void initValue({required dynamic Function() current, required dynamic Function() init})`
+**Signature:** `void initValue({required dynamic Function() current, required dynamic Function() init})`
 
 **Parameters:**
 - current: Function that retrieves the current value
