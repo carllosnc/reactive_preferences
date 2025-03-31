@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:reactive_preferences/reactive_preferences.dart';
-import '../data/reactive_preferences.dart';
+import '../preferences/counter.dart';
 
 class IncrementButton extends StatefulWidget {
   const IncrementButton({super.key});
