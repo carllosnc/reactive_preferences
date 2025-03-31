@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:reactive_preferences/reactive_preferences.dart';
-import '../data/reactive_preferences.dart';
+import '../preferences/counter.dart';
 
 class DecrementButton extends StatefulWidget {
   const DecrementButton({super.key});
