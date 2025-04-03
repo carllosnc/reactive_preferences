@@ -10,7 +10,7 @@ This is a unpublished package, so you need to add it to your pubspec.yaml file.
 
 ```yml
 dependencies:
-  localize:
+  reactive_preferences:
     git:
       url: https://github.com/carllosnc/reactive_preferences.git
 ```
